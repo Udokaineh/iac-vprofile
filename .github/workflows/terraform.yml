@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - stage
+      - main
     paths:
       - terraform/**
   pull_request:
@@ -11,6 +12,7 @@ on:
       - main
     paths:
       - terraform/**
+  workflow_dispatch:
 
 permissions:
   id-token: write
